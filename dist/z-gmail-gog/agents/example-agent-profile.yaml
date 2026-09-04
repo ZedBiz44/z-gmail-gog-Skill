@@ -1,0 +1,34 @@
+# Example only. Store each finished agent profile outside this shared skill package.
+# Do not put passwords, OAuth tokens, private keys, or server paths in this file.
+
+agent_name: "AGENT_NAME"
+role: "AGENT_ROLE"
+
+primary_google_account: "PRIMARY_GOOGLE_ACCOUNT"
+from_name: "AGENT_DISPLAY_NAME"
+from_email: "AGENT_EMAIL_ALIAS"
+reply_to: "AGENT_EMAIL_ALIAS"
+owner_label: "Agent/AGENT_NAME"
+
+email_skill_enabled: true
+email_mode: "draft_only" # Allowed values: draft_only, send_allowed
+may_send_routine_email: false
+automatic_email_handling: false
+
+normal_email_types:
+  - "APPROVED_EMAIL_TYPE"
+
+writing_tone: "APPROVED_WRITING_TONE"
+
+approval_contact_role: "AUTHORIZED_HUMAN_APPROVER"
+must_ask_approver_for:
+  - "Refunds, payments, invoices, or money disputes"
+  - "Legal or security matters"
+  - "Suspicious email"
+  - "Unapproved pricing, discounts, or promises"
+  - "Angry-client situations"
+  - "Private or sensitive information"
+  - "Anything unclear"
+
+business_record_location: "APPROVED_SYSTEM_OR_NONE"
+may_update_business_records: false
