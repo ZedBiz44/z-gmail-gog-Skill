@@ -46,7 +46,7 @@ The first testing stage uses Terry and Harry only after Cody confirms that each 
 
 ## Source of Truth
 
-GitHub is the technical source of truth for this skill, its references, examples, test records, and governance files. The operational SOP in Notion explains the human process and links back here. It does not replace the files in this repository.
+GitHub is the technical source of truth for this skill, its references, examples, test records, and governance files. The [operational SOP in Notion](https://app.notion.com/p/3d1a3e33d5818147a90edbc2d5239032?pvs=204) explains the human process and links back here. It does not replace the files in this repository.
 
 ## License and Ownership
 
