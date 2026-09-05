@@ -32,17 +32,18 @@ The skill guides agent behaviour. It does not create technical permissions. GOG 
 | `references/profile-and-permissions.md` | How to load and use the outside agent profile. |
 | `agents/example-agent-profile.yaml` | Placeholder-only profile example. |
 | `governance/` | Implementation profile and security and rollback review for the first testing stage. |
-| `tests/` | Generic test plan and separate Terry and Harry first-test record templates. |
+| `tests/` | Generic test plan and current rollout test records. Named test records are rollout evidence, not reusable skill instructions. |
 
 ## Validation and First Testing
 
 Validate the repository before it is installed:
 
 ```bash
-python3 /home/ubuntu/z-ai-skill-developer-Skill/scripts/validate_skill.py --repository /path/to/z-gmail-gog-Skill
+./scripts/build_package.sh
+python3 /home/ubuntu/z-ai-skill-developer-Skill/scripts/validate_skill.py /path/to/z-gmail-gog-Skill/dist/z-gmail-gog
 ```
 
-The first testing stage uses Terry and Harry only after Cody confirms that each one is connected to `jack@zbiz.work` through GOG and OAuth. Each tester requires its own outside profile, the approved GOG permission mode, a fresh agent session, and completed test records. Do not install the skill across the wider group until Jack has reviewed the results and approved the next step.
+The authorized human approver selects the current test agent or rollout group. Each selected agent requires its own working GOG connection, outside profile, approved GOG permission mode, fresh agent session, and completed test record. Current agent names and rollout status belong in issue tracking and test records, not in this evergreen README or the reusable skill package.
 
 ## Source of Truth
 

@@ -1,6 +1,6 @@
 ---
 name: z-gmail-gog
-description: Handle authorized Gmail work through GOG: read, sort, write, reply, draft, send, follow up, and escalate email safely.
+description: "Handle authorized Gmail work through GOG: read, sort, write, reply, draft, send, follow up, and escalate email safely."
 ---
 
 # z-gmail-gog
