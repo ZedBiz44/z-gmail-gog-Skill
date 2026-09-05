@@ -2,7 +2,7 @@
 
 This repository contains the **z-gmail-gog** Skill for ZedBiz agents that handle Gmail through GOG. It is a reusable email-work guide. It teaches an authorized agent how to read, search, sort, write, reply to, draft, send, follow up on, and record business email without hard-coding an agent name, email address, server, or current test status.
 
-`SKILL.md` is the authoritative runtime instruction file. The `references/` folder provides the extra guidance the agent loads only when a task needs it. The `agents/example-agent-profile.yaml` file is a placeholder-only example. Finished profiles live outside this shared skill package and are managed by the implementation operator.
+`SKILL.md` is the authoritative runtime instruction file. The `references/` folder provides the extra guidance the agent loads only when a task needs it. The `templates/example-agent-profile.yaml` file is a placeholder-only example. Finished profiles live outside this shared skill package and are managed by the implementation operator.
 
 ## When to Use This Skill
 
@@ -30,7 +30,7 @@ The skill guides agent behaviour. It does not create technical permissions. GOG 
 | `references/email-workflow.md` | Triage, writing, sorting, and follow-up guidance. |
 | `references/safety-and-escalation.md` | Confirmation, attachment, security, and approval rules. |
 | `references/profile-and-permissions.md` | How to load and use the outside agent profile. |
-| `agents/example-agent-profile.yaml` | Placeholder-only profile example. |
+| `templates/example-agent-profile.yaml` | Placeholder-only profile example. |
 | `governance/` | Implementation profile and security and rollback review for the first testing stage. |
 | `tests/` | Generic test plan and current rollout test records. Named test records are rollout evidence, not reusable skill instructions. |
 

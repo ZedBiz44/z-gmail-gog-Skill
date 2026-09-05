@@ -36,7 +36,7 @@ fi
 
 for resource in "${resources[@]}"; do
   case "$resource" in
-    agents|assets|references|scripts)
+    agents|assets|references|scripts|templates)
       if [[ -d "$root_dir/$resource" ]]; then
         cp -a "$root_dir/$resource" "$package_dir/$resource"
       else

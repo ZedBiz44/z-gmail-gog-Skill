@@ -60,7 +60,7 @@ If the assignment needs a different identity, label, or permission, stop instead
 
 ## Example Profile
 
-See [example-agent-profile.yaml](../agents/example-agent-profile.yaml). It uses placeholders only and is not an active configuration file.
+See [example-agent-profile.yaml](../templates/example-agent-profile.yaml). It uses placeholders only and is not an active configuration file.
 
 ## Technical References
 
